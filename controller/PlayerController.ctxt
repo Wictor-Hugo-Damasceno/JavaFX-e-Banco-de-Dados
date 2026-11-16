@@ -1,0 +1,20 @@
+#BlueJ class context
+#Mon Nov 16 07:51:29 BRT 2026
+comment0.target=PlayerController
+comment1.target=void initialize()
+comment10.target=void sobre()
+comment11.params=mensagem
+comment11.target=void mostrarSucesso(java.lang.String)
+comment12.params=mensagem
+comment12.target=void mostrarAviso(java.lang.String)
+comment13.params=mensagem
+comment13.target=void mostrarErro(java.lang.String)
+comment2.target=void configurarTabela()
+comment3.target=void configurarSelecao()
+comment4.target=void carregarPlayers()
+comment5.target=void cadastrarPlayer()
+comment6.target=void atualizarPlayer()
+comment7.target=void excluirPlayer()
+comment8.target=void limparCampos()
+comment9.target=void fecharAplicacao()
+numComments=14

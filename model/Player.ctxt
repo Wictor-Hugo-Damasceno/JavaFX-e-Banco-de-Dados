@@ -1,0 +1,19 @@
+#BlueJ class context
+#Mon Nov 16 07:46:34 BRT 2026
+comment0.target=Player
+comment1.target=Player()
+comment10.params=hp
+comment10.target=void setHp(int)
+comment2.params=nickName forca hp
+comment2.target=Player(java.lang.String, int, int)
+comment3.target=int getId()
+comment4.params=id
+comment4.target=void setId(int)
+comment5.target=java.lang.String getNickName()
+comment6.params=nickName
+comment6.target=void setNickName(java.lang.String)
+comment7.target=int getForca()
+comment8.params=forca
+comment8.target=void setForca(int)
+comment9.target=int getHp()
+numComments=11

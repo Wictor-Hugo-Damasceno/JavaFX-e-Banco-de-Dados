@@ -1,0 +1,15 @@
+#BlueJ class context
+#Mon Nov 16 07:46:45 BRT 2026
+comment0.target=PlayerRepositorio
+comment1.params=database
+comment1.target=PlayerRepositorio(Database)
+comment2.params=player
+comment2.target=Player create(Player)
+comment3.params=player
+comment3.target=void update(Player)
+comment4.params=player
+comment4.target=void delete(Player)
+comment5.params=id
+comment5.target=Player loadFromId(int)
+comment6.target=java.util.List loadAll()
+numComments=7

@@ -1,0 +1,146 @@
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/26"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.PlayerController"
+      spacing="10"
+      prefWidth="750"
+      prefHeight="550"
+      style="-fx-padding: 15;">
+
+    <MenuBar>
+        <Menu text="Arquivo">
+            <items>
+                <MenuItem text="Fechar"
+                          onAction="#fecharAplicacao"/>
+            </items>
+        </Menu>
+
+        <Menu text="Sobre">
+            <items>
+                <MenuItem text="Sistema de Players"
+                          onAction="#sobre"/>
+            </items>
+        </Menu>
+    </MenuBar>
+
+    <TabPane VBox.vgrow="ALWAYS"
+             tabClosingPolicy="UNAVAILABLE">
+
+        <Tab text="Player">
+            <VBox spacing="12"
+                  style="-fx-padding: 15;">
+
+                <Label text="Cadastro de Player"
+                       style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+                <GridPane hgap="10" vgap="10">
+
+                    <Label text="ID:"
+                           GridPane.rowIndex="0"
+                           GridPane.columnIndex="0"/>
+
+                    <TextField fx:id="txtId"
+                               editable="false"
+                               promptText="Automático"
+                               GridPane.rowIndex="0"
+                               GridPane.columnIndex="1"/>
+
+                    <Label text="Nickname:"
+                           GridPane.rowIndex="1"
+                           GridPane.columnIndex="0"/>
+
+                    <TextField fx:id="txtNickName"
+                               promptText="Digite o nickname"
+                               GridPane.rowIndex="1"
+                               GridPane.columnIndex="1"/>
+
+                    <Label text="Força:"
+                           GridPane.rowIndex="2"
+                           GridPane.columnIndex="0"/>
+
+                    <TextField fx:id="txtForca"
+                               promptText="Digite a força"
+                               GridPane.rowIndex="2"
+                               GridPane.columnIndex="1"/>
+
+                    <Label text="HP:"
+                           GridPane.rowIndex="3"
+                           GridPane.columnIndex="0"/>
+
+                    <TextField fx:id="txtHp"
+                               promptText="Digite o HP"
+                               GridPane.rowIndex="3"
+                               GridPane.columnIndex="1"/>
+
+                </GridPane>
+
+                <HBox spacing="10">
+
+                    <Button text="Cadastrar"
+                            onAction="#cadastrarPlayer"/>
+
+                    <Button text="Atualizar"
+                            onAction="#atualizarPlayer"/>
+
+                    <Button text="Excluir"
+                            onAction="#excluirPlayer"/>
+
+                    <Button text="Limpar"
+                            onAction="#limparCampos"/>
+
+                </HBox>
+
+                <Separator/>
+
+                <Label text="Players cadastrados"
+                       style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+                <TableView fx:id="tabelaPlayers"
+                           VBox.vgrow="ALWAYS">
+
+                    <columns>
+
+                        <TableColumn fx:id="colId"
+                                     text="ID"
+                                     prefWidth="60"/>
+
+                        <TableColumn fx:id="colNickName"
+                                     text="Nickname"
+                                     prefWidth="200"/>
+
+                        <TableColumn fx:id="colForca"
+                                     text="Força"
+                                     prefWidth="100"/>
+
+                        <TableColumn fx:id="colHp"
+                                     text="HP"
+                                     prefWidth="100"/>
+
+                    </columns>
+
+                </TableView>
+
+                <Label fx:id="lblStatus"
+                       text="Sistema pronto."/>
+
+            </VBox>
+        </Tab>
+
+        <Tab text="Outros Cadastros">
+
+            <AnchorPane>
+
+                <Label text="Outros cadastros serão implementados aqui."
+                       layoutX="20"
+                       layoutY="20"/>
+
+            </AnchorPane>
+
+        </Tab>
+
+    </TabPane>
+
+</VBox>
